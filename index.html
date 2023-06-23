@@ -4,8 +4,117 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Javascript Traversing</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+
+        </style>
+        <script>
+            // before the closing of head tag
+        </script>
     </head>
     <body>
-        
+        <table class="table w-50 offset-3 mt-5">
+            <thead>
+                <tr>
+                    <th>NO.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Suryabhan</td>
+                    <td>Singh</td>
+                    <td>
+                        <button class="btn btn-success s_viewbtn" onclick=" btnclick(this) ">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Gautam</td>
+                    <td>Sharma</td>
+                    <td>
+                        <button class="btn btn-success" onclick="btnclick(this)">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vikku</td>
+                    <td>Gwala</td>
+                    <td>
+                        <button class="btn btn-success" onclick=" btnclick(this) ">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Rajat</td>
+                    <td>Yadav</td>
+                    <td>
+                        <button class="btn btn-success" onclick=" btnclick(this) ">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Payal</td>
+                    <td>Sonp</td>
+                    <td>
+                        <button class="btn btn-success" onclick=" btnclick(this) ">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Yogi</td>
+                    <td>Jaiswar</td>
+                    <td>
+                        <button class="btn btn-success" onclick=" btnclick(this) ">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Ritik</td>
+                    <td>Gehlot</td>
+                    <td>
+                        <button class="btn btn-success" onclick=" btnclick(this) ">View</button>
+                        <button class="btn btn-primary">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script>
+            //1. Function defination is a one time process
+            let btnclick=(e)=>{ // fat arrow es6 2015
+                console.log(e.closest('tr').querySelector('td:nth-child(2)').innerHTML);
+               // console.log(e.target.closest('tr').querySelector('td:nth-child(2)').innerHTML)
+            }
+
+            // element.addEventListener(event, function, useCapture);
+
+            // element = document.queryselector(selector)
+
+            // userCapture is optional
+
+            // traversing up = closest 
+
+            // traversing down = queryselector
+            
+            
+            
+        </script>
     </body>
 </html>
